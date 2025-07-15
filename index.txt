@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>신보그룹의 지금을 함께 만드는 이야기</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <!-- 신보그룹 로고 -->
+                <img src="https://via.placeholder.com/100x50?text=SHINBO+LOGO" alt="신보그룹 로고">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#highlight">하이라이트</a></li>
+                    <li><a href="#issue">상반기 이슈</a></li>
+                    <li><a href="#story">그룹 스토리</a></li>
+                    <li><a href="#plan">기획</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="main-visual">
+        <div class="slogan">ONE TEAM, ONE SHINBO</div>
+    </section>
+
+    <section id="highlight" class="section">
+        <div class="container">
+            <h2>Highlight</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200?text=Thumbnail" alt="">
+                    <h3>기사 제목 1</h3>
+                    <p>간단한 설명 1</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200?text=Thumbnail" alt="">
+                    <h3>기사 제목 2</h3>
+                    <p>간단한 설명 2</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200?text=Thumbnail" alt="">
+                    <h3>기사 제목 3</h3>
+                    <p>간단한 설명 3</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200?text=Thumbnail" alt="">
+                    <h3>기사 제목 4</h3>
+                    <p>간단한 설명 4</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="issue" class="section">
+        <div class="container">
+            <h2>한눈에 보는 신보 상반기 이슈 Pick</h2>
+            <p class="description">변화의 흐름 속...</p>
+            <div class="card-container">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200?text=Thumbnail" alt="">
+                    <h3>2024년 하반기 성과측정 우수현장 포상</h3>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200?text=Thumbnail" alt="">
+                    <h3><a href="interview.html">창립기념식</a></h3>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200?text=Thumbnail" alt="">
+                    <h3>스파크 인턴십 2기 모집</h3>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200?text=Thumbnail" alt="">
+                    <h3>우수 협력사 수상</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="story" class="section">
+        <div class="container">
+            <h2>그룹 스토리</h2>
+            <div class="card-container">
+                <div class="card">
+                    <span class="category">현장스토리</span>
+                    <h3>현장의 사람들...</h3>
+                    <p>구미천연가스발전소...</p>
+                </div>
+                <div class="card">
+                    <span class="category">사업 성과</span>
+                    <h3>전기로 세상을 연결하다</h3>
+                    <p>신세종복합발전소...</p>
+                </div>
+                <div class="card">
+                    <span class="category">부문 스토리</span>
+                    <h3>신보의 오늘...</h3>
+                    <p>국내건축부문 정재문 대표...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="plan" class="section featured">
+        <div class="container">
+            <h2>기획</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>문화는 말이 아니라...</h3>
+                    <p class="sub-title">우리는 어떤 소통을...</p>
+                </div>
+                <div class="card">
+                    <h3><a href="data_story.html">데이터로 말하는 현장...</a></h3>
+                    <p class="sub-title">관리경영의 새 기준을...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>신보그룹의 사람, 현장, 문화 이야기를 전합니다.</p>
+            <p>발행처: 신보그룹</p>
+            <p>문의: webzine@shinbo.com</p>
+            <div class="comments-section">
+                <h3>댓글</h3>
+                <!-- 댓글 기능 추가 예정 -->
+                <textarea placeholder="댓글을 남겨주세요."></textarea>
+                <button>등록</button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
