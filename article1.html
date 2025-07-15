@@ -2,47 +2,61 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>기획 <우리가 선택해야 하는 ‘소통’무엇인가?> - 신보그룹 웹진</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- 각 페이지에 맞는 제목으로 수정해주세요 -->
+    <title>기획: 우리가 선택해야 하는 ‘소통’ - 신보그룹 웹진</title>
+    
+    <!-- index.html과 동일한 CSS 파일을 연결합니다. (매우 중요!) -->
+    <link rel="stylesheet" href="style.css?v=11"> 
 </head>
-<body class="article-page">
+<body>
 
+    <!-- ▼▼▼ index.html에서 그대로 복사해 온 헤더 ▼▼▼ -->
     <header>
-        <!-- 메인 페이지로 돌아가는 링크 -->
-        <a href="index.html"> ← 목록으로 돌아가기</a>
-    </header>
-
-    <main>
-        <article>
-            <h1>기획 <우리가 선택해야 하는 ‘소통’무엇인가?></h1>
-            
-            <p class="meta-info">발행일: 2025-08-01</p>
-
-            <img src="article1_main.jpg" alt="소통 관련 메인 이미지" style="width:100%; max-width:800px;">
-
-            <div class="content">
-                <h2>변화와 재정립의 시기, 우리에게 필요한 태도</h2>
-                <p>
-                    이곳에 기사의 전체 본문 내용이 들어갑니다. 
-                    단락을 나누어 자유롭게 작성해주세요. 
-                    변화와 재정립의 시기에 서 있는 신보그룹. 그 과정에서 우리가 갖춰야 할 조직문화의 태도는 무엇일까요?
-                </p>
-                <p>
-                    두 번째 단락입니다. 상세 페이지는 이렇게 여러 단락으로 구성될 수 있습니다. 
-                    이미지와 텍스트를 자유롭게 배치하여 풍부한 콘텐츠를 제공할 수 있습니다.
-                </p>
-
-                <!-- 중간 이미지 예시 -->
-                <img src="article1_sub.jpg" alt="소통 관련 서브 이미지" style="width:100%; max-width:600px; margin: 20px 0;">
-
-                <h2>새로운 소통 문화를 향하여</h2>
-                <p>
-                    마지막 단락입니다. 결론을 내리며 기사를 마무리합니다.
-                </p>
+        <div class="container">
+            <div class="logo">
+                <!-- 로고 클릭 시 메인 페이지로 이동하도록 링크를 수정하는 것이 좋습니다 -->
+                <a href="index.html"><img src="logo.png" alt="신보그룹 로고"></a>
             </div>
+            <nav>
+                <ul>
+                    <!-- 메인 페이지의 해당 섹션으로 이동하도록 링크를 수정합니다 -->
+                    <li><a href="index.html#highlight">Highlight</a></li>
+                    <li><a href="index.html#issue">상반기 이슈</a></li>
+                    <li><a href="index.html#group-story">그룹 스토리</a></li>
+                    <li><a href="index.html#featured">기획</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- ▲▲▲ 여기까지가 공통 헤더입니다 ▲▲▲ -->
 
-        </article>
+
+    <!-- ▼▼▼ 이 부분에 각 페이지의 고유한 콘텐츠를 넣습니다 ▼▼▼ -->
+    <main class="article-content">
+        <div class="container">
+            <h1>기획: 우리가 선택해야 하는 ‘소통’무엇인가?</h1>
+            <p>변화와 재정립의 시기에 서 있는 신보그룹. 그 과정에서 우리가 갖춰야 할 조직문화의 태도는 무엇일까</p>
+            <hr>
+            <img src="hilight_card1.png" alt="소통 기획 이미지" style="width:100%; max-width:800px; margin:20px 0;">
+            <p>여기에 게시물 본문 내용이 들어갑니다. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            <p>문단은 p 태그로 계속 추가할 수 있습니다.</p>
+        </div>
     </main>
+    <!-- ▲▲▲ 여기까지가 고유 콘텐츠입니다 ▲▲▲ -->
 
+
+    <!-- ▼▼▼ index.html에서 그대로 복사해 온 푸터 ▼▼▼ -->
+    <footer>
+        <div class="container">
+            <p>신보그룹의 사람, 현장, 문화 이야기를 전합니다.</p>
+            <p>발행처 : 신보그룹 인사팀 ㅣ 문의 : jhlee@shinbonet.com</p>
+            <p>© 2024 Shinbo Group. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- ▲▲▲ 여기까지가 공통 푸터입니다 ▲▲▲ -->
+
+
+    <!-- JS 파일도 필요하다면 연결해줍니다 -->
+    <script src="script.js"></script>
 </body>
 </html>
