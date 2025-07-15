@@ -197,6 +197,87 @@ footer p {
     font-size: 0.9em;
 }
 
+
+/* ========== 상세 페이지 (Article Page) 스타일 추가 ========== */
+.article-header {
+    background-color: #fff;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.back-to-list {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.article-container {
+    max-width: 800px; /* 본문 최대 너비를 800px로 제한 */
+    margin: 40px auto; /* 위아래, 좌우 자동 여백 */
+    padding: 0 20px;
+}
+
+.article-title-box {
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+}
+
+.article-title-box .category {
+    background-color: #F47A1F;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.article-title-box h1 {
+    font-size: 2.8em;
+    margin: 15px 0 5px 0;
+}
+
+.article-title-box h2 {
+    font-size: 1.5em;
+    color: #666;
+    font-weight: normal;
+    margin: 0;
+}
+
+.article-content {
+    text-align: left;
+    font-size: 1.1em; /* 17.6px */
+    line-height: 1.8;
+}
+
+.article-content h3 {
+    font-size: 1.6em;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.article-content p {
+    margin: 0 0 25px 0;
+}
+
+.article-content blockquote {
+    border-left: 4px solid #F47A1F;
+    padding-left: 20px;
+    margin: 30px 0;
+    font-size: 1.2em;
+    font-style: italic;
+    color: #555;
+}
+
+.article-content img {
+    max-width: 100%;
+    height: auto;
+    margin: 30px 0;
+    border-radius: 8px;
+}
+/* -------------------------------------------------------- */
+
 /* Responsive Design */
 @media (max-width: 992px) {
     .card {
@@ -242,6 +323,18 @@ footer p {
     }
     .card p {
         font-size: 1em;
+    }
+}
+
+ /* 모바일 상세 페이지 폰트 크기 조정 */
+    .article-title-box h1 {
+        font-size: 2.2em;
+    }
+    .article-title-box h2 {
+        font-size: 1.2em;
+    }
+    .article-content {
+        font-size: 1em; /* 16px */
     }
 }
 
