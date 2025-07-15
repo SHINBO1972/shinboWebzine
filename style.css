@@ -1,115 +1,179 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <title>신보그룹 웹진</title>
-    <!-- CSS 파일 최종 버전 -->
-    <link rel="stylesheet" href="style.css?v=9">
-</head>
-<body>
+/* Basic Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    line-height: 1.6;
+    background-color: #fff;
+}
 
-    <header>
-        <div class="container">
-            <div class="logo">
-                <a href="#"><img src="logo.png" alt="신보그룹 로고"></a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#highlight">Highlight</a></li>
-                    <li><a href="#issue">상반기 이슈</a></li>
-                    <li><a href="#group-story">그룹 스토리</a></li>
-                    <li><a href="#featured">기획</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
-    <section id="main-visual">
-        <h1 class="slogan">ONE TEAM, ONE SHINBO</h1>
-    </section>
+/* Header */
+header {
+    background-color: #fff;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
 
-    <!-- Highlight Section (세로형 2x2 카드) -->
-    <section id="highlight" class="section">
-        <div class="container">
-            <h2>Highlight</h2>
-            <div class="card-container">
-                <article class="card card-vertical">
-                    <img src="hilight_card1.png" alt="소통 기획 이미지">
-                    <div class="card-content">
-                        <h3>기획 <우리가 선택해야 하는 ‘소통’무엇인가?></h3>
-                        <p>변화와 재정립의 시기에 서 있는 신보그룹. 그 과정에서 우리가 갖춰야 할 조직문화의 태도는 무엇일까</p>
-                        <a href="article1.html">더보기 →</a>
-                    </div>
-                </article>
-                <article class="card card-vertical">
-                    <img src="hilight_card2.png" alt="데이터 기획 이미지">
-                    <div class="card-content">
-                        <h3>기획 <데이터로 말하는 현장, 생산성 효율화 TFT의 도전></h3>
-                        <p>정성적 관리에서 정량적 판단으로, 신보의 ‘생산성’은 지금 어디쯤일까</p>
-                        <a href="article2.html">더보기 →</a>
-                    </div>
-                </article>
-                <article class="card card-vertical">
-                    <img src="hilight_card3.png" alt="채용홈페이지 리뉴얼 이미지">
-                    <div class="card-content">
-                        <h3>공식 채용홈페이지 리뉴얼</h3>
-                        <p>리뉴얼된 채용 홈페이지를 확인하세요</p>
-                        <a href="https://shinbo.recruiter.co.kr/" target="_blank">바로가기 →</a>
-                    </div>
-                </article>
-                <article class="card card-vertical">
-                    <img src="hilight_card4.png" alt="스파크 인턴 모집 이미지">
-                    <div class="card-content">
-                        <h3>신보그룹 스파크 인턴 2기 모집</h3>
-                        <p>전문PM 양성을 위한 스파크 2기 인턴십 채용이 진행되었습니다</p>
-                        <a href="article4.html">더보기 →</a>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-    <!-- Group Story Section (가로형 카드) -->
-    <section id="group-story" class="section">
-        <div class="container">
-            <h2>그룹 스토리</h2>
-            <div class="card-container">
-                <article class="card card-horizontal">
-                    <a href="#" class="card-image">
-                        <img src="images/story1.jpg" alt="구미천연가스발전소">
-                    </a>
-                    <div class="card-content">
-                        <span class="category">현장스토리</span>
-                        <h3>현장의 사람들, 그들이 전하는 생생한 이야기</h3>
-                        <p>구미천연가스발전소 전기공사 현장</p>
-                        <a href="#">더보기 →</a>
-                    </div>
-                </article>
-                <article class="card card-horizontal">
-                    <a href="#" class="card-image">
-                        <img src="images/story2.jpg" alt="신세종복합발전소">
-                    </a>
-                    <div class="card-content">
-                        <span class="category">사업 성과</span>
-                        <h3>전기로 세상을 연결하다</h3>
-                        <p>신세종복합발전소</p>
-                        <a href="#">더보기 →</a>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
+header .logo img {
+    height: 40px;
+}
 
-    <!-- ... (다른 섹션들도 위와 같이 card-horizontal 클래스를 사용) ... -->
-    
-    <footer>
-        <div class="container">
-            <p>신보그룹의 사람, 현장, 문화 이야기를 전합니다.</p>
-            <p>발행처 : 신보그룹 인사팀 ㅣ 문의 : jhlee@shinbonet.com</p>
-            <p>© 2024 Shinbo Group. All rights reserved.</p>
-        </div>
-    </footer>
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
 
-    <script src="script.js"></script>
-</body>
-</html>
+header nav ul li {
+    margin-left: 30px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #F47A1F;
+}
+
+/* Main Visual */
+#main-visual {
+    height: calc(100vh - 80px);
+    margin-top: 80px; 
+    background-image: url("/shinbo/main-visual.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+#main-visual .slogan {
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Sections */
+.section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 50px;
+    position: relative;
+    display: inline-block;
+}
+
+.section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #F47A1F;
+    margin: 10px auto 0;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* --- 세로형 카드 (모든 카드 공통) --- */
+.card {
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    /* PC: 2x2 그리드를 위해 너비 50% */
+    width: calc(50% - 20px); 
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card .card-content {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* 카드 높이를 맞추기 위해 */
+}
+
+.card h3 {
+    font-size: 1.5em;
+    color: #222;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 20px;
+    flex-grow: 1; /* 설명글 영역이 남은 공간을 채움 */
+}
+
+.card a {
+    text-decoration: none;
+    color: #F47A1F;
+    font-weight: bold;
+    margin-top: auto; /* '더보기'를 항상 맨 아래에 위치 */
+}
+
+/* 상세 페이지 스타일 등은 이전과 동일 */
+/* ... */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* 모바일에서는 1열로 변경 */
+    .card {
+        width: 100%;
+    }
+}
+/* ... */
