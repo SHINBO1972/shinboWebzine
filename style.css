@@ -90,7 +90,6 @@ header nav ul li a:hover { color: #F47A1F; }
     gap: 30px;
 }
 
-/* --- 세로형 카드 (모든 카드 공통) --- */
 .card {
     background-color: #fff;
     border: 1px solid #eee;
@@ -101,7 +100,7 @@ header nav ul li a:hover { color: #F47A1F; }
     text-align: left;
     display: flex;
     flex-direction: column;
-    width: calc(50% - 20px); /* PC: 2x2 그리드 */
+    width: calc(50% - 20px);
 }
 
 .card:hover {
@@ -144,18 +143,9 @@ header nav ul li a:hover { color: #F47A1F; }
     margin-top: auto;
 }
 
-/* --- 상세 페이지 스타일 --- */
-.article-page {
-    background-color: #fff;
-}
-.article-header {
-    padding: 15px 0;
-    border-bottom: 1px solid #eee;
-}
-.back-to-list {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
+/* --- 상세 페이지 스타일 (수정 및 강화) --- */
+.article-page main {
+    padding-top: 80px; /* 고정 헤더만큼 공간 확보 */
 }
 .article-container {
     max-width: 800px;
@@ -164,30 +154,44 @@ header nav ul li a:hover { color: #F47A1F; }
 }
 .article-title-box {
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 2px solid #333;
     margin-bottom: 40px;
     padding-bottom: 20px;
 }
+/* h1 (메인 제목) 색상 및 스타일 */
 .article-title-box h1 {
     font-size: 2.8em;
+    color: #F47A1F; /* 주황색으로 변경 */
     margin: 15px 0 5px 0;
     line-height: 1.3;
+    font-weight: 700;
 }
 .article-title-box h2 {
     font-size: 1.5em;
-    color: #666;
+    color: #555; /* 부제목은 조금 더 진하게 */
     font-weight: normal;
 }
 .article-content {
     font-size: 1.1em;
     line-height: 1.8;
 }
+/* 본문 소제목 스타일 */
 .article-content h3 {
     font-size: 1.6em;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #eee;
+    font-weight: 600;
+    color: #333;
+    margin-top: 60px;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+/* 본문 단락 스타일 */
+.article-content p {
+    color: #4a4a4a; /* 짙은 회색으로 변경 */
+    margin-bottom: 25px;
+}
+.article-content strong {
+    color: #000;
 }
 
 /* Footer */
