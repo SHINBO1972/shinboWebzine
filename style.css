@@ -34,7 +34,7 @@ header .container {
 }
 
 header .logo img {
-    height: 40px; /* 로고 높이를 살짝 조정했습니다 */
+    height: 40px;
 }
 
 header nav ul {
@@ -56,22 +56,22 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #F47A1F; /* Main point color */
+    color: #F47A1F;
 }
 
 /* Main Visual */
 #main-visual {
-    height: 100vh;
-    /* 배경 이미지 경로를 수정했습니다 */
-    background: url("main-visual.jpg") no-repeat center center/cover;
+    height: calc(100vh - 80px);
+    margin-top: 80px; 
+    background-image: url("/shinbo/main-visual.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
     text-align: center;
-    /* 헤더가 고정되어 있으므로, 메인 비주얼이 헤더 밑으로 들어가지 않도록 마진을 줍니다 */
-    padding-top: 80px; 
-    box-sizing: border-box;
 }
 
 #main-visual .slogan {
@@ -84,14 +84,10 @@ header nav ul li a:hover {
 .section {
     padding: 80px 0;
     text-align: center;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-.section.active {
-    opacity: 1;
-    transform: translateY(0);
+.section.featured {
+    background-color: #f9f9f9;
 }
 
 .section h2 {
@@ -107,7 +103,7 @@ header nav ul li a:hover {
     display: block;
     width: 60px;
     height: 3px;
-    background-color: #F47A1F; /* Main point color */
+    background-color: #F47A1F;
     margin: 10px auto 0;
 }
 
@@ -173,6 +169,16 @@ header nav ul li a:hover {
     margin-top: 15px;
 }
 
+.card .category {
+    display: inline-block;
+    background-color: #F47A1F;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    margin-bottom: 10px;
+}
+
 /* Footer */
 footer {
     background-color: #333;
@@ -186,7 +192,7 @@ footer p {
     font-size: 0.9em;
 }
 
-/* Responsive Design */
+/* ========== Responsive Design (모바일 최적화 수정) ========== */
 @media (max-width: 992px) {
     .card {
         width: calc(50% - 30px);
@@ -194,8 +200,17 @@ footer p {
 }
 
 @media (max-width: 768px) {
+    /* 모바일에서 기본 폰트 크기를 16px로 명확하게 설정 */
+    body {
+        font-size: 16px; 
+    }
+
     header .container {
         flex-direction: column;
+    }
+    /* 모바일에서 로고 크기 살짝 키우기 */
+    header .logo img {
+        height: 45px;
     }
     header nav ul {
         margin-top: 15px;
@@ -203,17 +218,33 @@ footer p {
     header nav ul li {
         margin: 0 15px;
     }
-    #main-visual .slogan {
-        font-size: 2.5em;
+    /* 모바일에서 메뉴 폰트 크기 키우기 */
+    header nav ul li a {
+        font-size: 1.1em;
     }
+
+    /* 모바일에서 슬로건 폰트 크기 키우기 */
+    #main-visual .slogan {
+        font-size: 2.8em;
+    }
+
     .section {
         padding: 60px 0;
     }
     .section h2 {
         font-size: 2em;
     }
+
+    /* 모바일에서 카드 레이아웃을 1줄로 변경 */
     .card {
-        width: calc(100% - 20px);
+        width: calc(100% - 20px); 
+    }
+    /* 모바일에서 카드 안의 폰트 크기 키우기 */
+    .card h3 {
+        font-size: 1.6em;
+    }
+    .card p {
+        font-size: 1em; /* 16px */
     }
 }
 
@@ -221,8 +252,9 @@ footer p {
     header nav ul li {
         margin: 0 10px;
     }
+    /* 더 작은 모바일 화면에서 슬로건 크기 조정 */
     #main-visual .slogan {
-        font-size: 2em;
+        font-size: 2.4em;
     }
     .section {
         padding: 40px 0;
@@ -231,4 +263,3 @@ footer p {
         font-size: 1.8em;
     }
 }
-
