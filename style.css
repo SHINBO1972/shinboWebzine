@@ -81,7 +81,7 @@ footer p { margin: 5px 0; font-size: 0.9em; }
 
 /* --- 상세 페이지 스타일 --- */
 .article-main {
-   padding-top: 140px;  /* 고정된 헤더 높이만큼 여백 */
+   padding-top: 80px;  /* 고정된 헤더 높이만큼 여백 */
     background-color: #f8f9fa;
     padding-bottom: 60px;
 }
