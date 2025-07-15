@@ -153,3 +153,114 @@ footer p { margin: 5px 0; font-size: 0.9em; }
     .article-container { padding: 30px 20px; margin: 30px auto; }
     .article-title-box h1 { font-size: 2.2em; }
 }
+
+
+/* ========== 상세 페이지 스타일 (레퍼런스와 동일하게) ========== */
+
+/* 상세 페이지의 기본 배경색 설정 */
+.article-page {
+    background-color: #f8f9fa;
+}
+
+/* 본문 콘텐츠를 감싸는 흰색 박스 */
+.article-main {
+    padding-top: 100px; /* 고정 헤더보다 여유있게 공간 확보 */
+    padding-bottom: 60px;
+}
+
+.article-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 60px;
+    background-color: #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+}
+
+/* 제목 영역 (가운데 정렬) */
+.article-title-box {
+    text-align: center;
+    border-bottom: 1px solid #dee2e6;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+}
+
+/* 메인 제목 (H1) */
+.article-title-box h1 {
+    font-size: 2.5em; /* 40px */
+    font-weight: 700;
+    color: #F47A1F; /* 포인트 컬러 */
+    margin: 0 0 10px 0;
+}
+
+/* 부제 (H2) */
+.article-title-box h2 {
+    font-size: 1.3em; /* 20.8px */
+    color: #6c757d; /* 연한 회색 */
+    font-weight: 400;
+    margin: 0;
+}
+
+/* 본문 콘텐츠 영역 */
+.article-content {
+    font-size: 16px; /* 기본 폰트 크기 */
+    line-height: 1.9;
+    color: #212529; /* 기본 텍스트 색상 */
+    text-align: left;
+}
+
+/* 본문 소제목 (H3) */
+.article-content h3 {
+    font-size: 1.25em; /* 20px */
+    font-weight: 700;
+    color: #F47A1F; /* 포인트 컬러 */
+    margin: 50px 0 20px 0;
+}
+
+/* 본문 단락 */
+.article-content p {
+    margin: 0 0 25px 0;
+}
+
+/* 본문 강조 텍스트 */
+.article-content strong {
+    color: #000;
+    font-weight: 600;
+}
+
+/* '목록으로 돌아가기' 버튼 */
+.back-to-list-button {
+    display: inline-block;
+    text-align: center;
+    margin-top: 50px;
+    background-color: #F47A1F;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.back-to-list-button:hover {
+    background-color: #e06a1a;
+}
+
+/* 반응형 (모바일) */
+@media (max-width: 768px) {
+    .article-main {
+        padding-top: 80px;
+    }
+    .article-container { 
+        padding: 30px 20px; 
+        margin: 30px 10px; 
+    }
+    .article-title-box h1 { 
+        font-size: 2em; 
+    }
+    .article-title-box h2 {
+        font-size: 1.1em;
+    }
+    .article-content h3 {
+        font-size: 1.15em;
+    }
+}
