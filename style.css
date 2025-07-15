@@ -34,7 +34,7 @@ header .container {
 }
 
 header .logo img {
-    height: 50px; /* Adjust as needed */
+    height: 40px; /* 로고 높이를 살짝 조정했습니다 */
 }
 
 header nav ul {
@@ -62,13 +62,16 @@ header nav ul li a:hover {
 /* Main Visual */
 #main-visual {
     height: 100vh;
-    background: url("../images/main.png") no-repeat center center/cover;
+    /* 배경 이미지 경로를 수정했습니다 */
+    background: url("main-visual.jpg") no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
     text-align: center;
-    margin-top: 80px; /* Adjust for fixed header */
+    /* 헤더가 고정되어 있으므로, 메인 비주얼이 헤더 밑으로 들어가지 않도록 마진을 줍니다 */
+    padding-top: 80px; 
+    box-sizing: border-box;
 }
 
 #main-visual .slogan {
@@ -128,7 +131,7 @@ header nav ul li a:hover {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     padding: 20px;
     text-align: left;
-    width: calc(25% - 30px); /* For 4 cards in a row */
+    width: calc(25% - 30px);
     box-sizing: border-box;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -151,39 +154,23 @@ header nav ul li a:hover {
     margin-bottom: 10px;
 }
 
+.card h4 {
+    font-size: 1.2em;
+    color: #F47A1F;
+    margin-bottom: 5px;
+}
+
 .card p {
     font-size: 0.95em;
     color: #666;
 }
 
-.card .category {
-    display: inline-block;
-    background-color: #F47A1F; /* Main point color */
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 4px;
-    font-size: 0.8em;
-    margin-bottom: 10px;
-}
-
-/* Featured Section (기획) */
-.section.featured .card {
-    background-color: #F47A1F; /* Main point color */
-    color: #fff;
-}
-
-.section.featured .card h3,
-.section.featured .card p {
-    color: #fff;
-}
-
-.section.featured .card a {
-    color: #fff;
+.card a {
     text-decoration: none;
-}
-
-.section.featured .card a:hover {
-    text-decoration: underline;
+    color: #F47A1F;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 15px;
 }
 
 /* Footer */
@@ -199,46 +186,10 @@ footer p {
     font-size: 0.9em;
 }
 
-.comments-section {
-    margin-top: 30px;
-    padding-top: 20px;
-    border-top: 1px solid #555;
-}
-
-.comments-section h3 {
-    font-size: 1.5em;
-    margin-bottom: 15px;
-}
-
-.comments-section textarea {
-    width: 80%;
-    max-width: 600px;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
-    resize: vertical;
-}
-
-.comments-section button {
-    background-color: #F47A1F; /* Main point color */
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-    transition: background-color 0.3s ease;
-}
-
-.comments-section button:hover {
-    background-color: #e06a1a;
-}
-
 /* Responsive Design */
 @media (max-width: 992px) {
     .card {
-        width: calc(50% - 30px); /* 2 cards in a row */
+        width: calc(50% - 30px);
     }
 }
 
@@ -246,29 +197,23 @@ footer p {
     header .container {
         flex-direction: column;
     }
-
     header nav ul {
         margin-top: 15px;
     }
-
     header nav ul li {
         margin: 0 15px;
     }
-
     #main-visual .slogan {
         font-size: 2.5em;
     }
-
     .section {
         padding: 60px 0;
     }
-
     .section h2 {
         font-size: 2em;
     }
-
     .card {
-        width: calc(100% - 20px); /* 1 card in a row */
+        width: calc(100% - 20px);
     }
 }
 
@@ -276,15 +221,12 @@ footer p {
     header nav ul li {
         margin: 0 10px;
     }
-
     #main-visual .slogan {
         font-size: 2em;
     }
-
     .section {
         padding: 40px 0;
     }
-
     .section h2 {
         font-size: 1.8em;
     }
