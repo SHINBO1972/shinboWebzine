@@ -45,12 +45,14 @@ footer p { margin: 5px 0; font-size: 0.9em; }
 #main-visual {
     height: calc(100vh - 80px);
     margin-top: 80px; 
+    margin-bottom: 16px;
     background-image: url("/shinbo/main-visual.jpg");
     background-position: center center;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column; 
     color: #fff;
     text-align: center;
 }
