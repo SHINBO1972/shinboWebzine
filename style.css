@@ -1,269 +1,91 @@
-/* Basic Styles */
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: #333;
-    line-height: 1.6;
-    background-color: #fff;
-}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!-- 각 페이지에 맞는 제목으로 수정해주세요 -->
+    <title>기획: 우리가 선택해야 하는 ‘소통’ - 신보그룹 웹진</title>
+    
+    <!-- index.html과 동일한 CSS 파일을 연결합니다. (매우 중요!) -->
+    <link rel="stylesheet" href="style.css?v=11"> 
+</head>
+<body>
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* --- 모든 페이지 공통 헤더/푸터 --- */
-header {
-    background-color: #fff;
-    padding: 15px 0;
-    border-bottom: 1px solid #eee;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
-header .container { display: flex; justify-content: space-between; align-items: center; }
-header .logo img { height: 40px; }
-header nav ul { list-style: none; margin: 0; padding: 0; display: flex; }
-header nav ul li { margin-left: 30px; }
-header nav ul li a { text-decoration: none; color: #333; font-weight: 500; }
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 40px 0;
-    text-align: center;
-}
-footer p { margin: 5px 0; font-size: 0.9em; }
-
-/* --- 메인 페이지 스타일 --- */
-#main-visual {
-    height: calc(100vh - 80px);
-    margin-top: 80px; 
-    margin-bottom: 16px;
-    background-image: url("/shinbo/main-visual.jpg");
-    background-position: center center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; 
-    gap: 16px;
-    color: #fff;
-    text-align: center;
-}
-#main-visual .slogan { font-size: 3.2em; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
-
-.section { padding: 80px 0; text-align: center; }
-.section h2 { font-size: 2.5em; margin-bottom: 50px; position: relative; display: inline-block; }
-.section h2::after { content: ''; display: block; width: 60px; height: 3px; background-color: #F47A1F; margin: 10px auto 0; }
-
-.card-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; }
-.card {
-    background-color: #fff;
-    border: 1px solid #eee;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    width: calc(50% - 20px);
-    transition: box-shadow 0.3s ease;
-}
-.card:hover { box-shadow: 0 8px 16px rgba(0,0,0,0.12); }
-.card img { width: 100%; height: 250px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px; }
-.card .card-content { padding: 25px; display: flex; flex-direction: column; flex-grow: 1; }
-.card h3 { font-size: 1.5em; color: #222; margin: 0 0 15px 0; }
-.card p { font-size: 1em; color: #555; margin-bottom: 20px; flex-grow: 1; }
-.card a { text-decoration: none; color: #F47A1F; font-weight: bold; margin-top: auto; }
-
-/* --- 상세 페이지 스타일 --- */
-.article-main {
-   padding-top: 140px;  /* 고정된 헤더 높이만큼 여백 */
-    background-color: #f8f9fa;
-    padding-bottom: 60px;
-}
-.article-container {
-    max-width: 800px;
-    margin: 60px auto;
-    padding: 50px 60px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-}
-.article-title-box {
-    text-align: center; /* 제목 가운데 정렬 */
-    border-bottom: 2px solid #333;
-    margin-bottom: 50px;
-    padding-bottom: 30px;
-}
-.article-title-box h1 {
-    font-size: 2.8em;
-    color: #F47A1F; /* 주황색 */
-    margin: 0 0 10px 0;
-    line-height: 1.3;
-    font-weight: 700;
-}
-.article-title-box h2 {
-    font-size: 1.5em;
-    color: #555;
-    font-weight: normal;
-}
-.article-content {
-    font-size: 1.1em;
-    line-height: 1.8;
-    text-align: left;
-}
-.article-content h3 {
-    font-size: 1.6em;
-    font-weight: 600;
-    color: #333;
-    margin: 60px 0 25px 0;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #eee;
-}
-.article-content p {
-    color: #4a4a4a; /* 짙은 회색 */
-    margin-bottom: 25px;
-}
-.article-content strong {
-    color: #000;
-}
-.back-to-list-button {
-    display: inline-block;
-    text-align: center;
-    margin-top: 50px;
-    background-color: #F47A1F;
-    color: white;
-    padding: 12px 25px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-.back-to-list-button:hover {
-    background-color: #e06a1a;
-}
-
-/* --- 반응형 디자인 --- */
-@media (max-width: 768px) {
-    .card { width: 100%; }
-    .article-container { padding: 30px 20px; margin: 30px auto; }
-    .article-title-box h1 { font-size: 2.2em; }
-}
+    <!-- ▼▼▼ index.html에서 그대로 복사해 온 헤더 ▼▼▼ -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <!-- 로고 클릭 시 메인 페이지로 이동하도록 링크를 수정하는 것이 좋습니다 -->
+                <a href="index.html"><img src="logo.png" alt="신보그룹 로고"></a>
+            </div>
+            <nav>
+                <ul>
+                    <!-- 메인 페이지의 해당 섹션으로 이동하도록 링크를 수정합니다 -->
+                    <li><a href="index.html#highlight">Highlight</a></li>
+                    <li><a href="index.html#issue">상반기 이슈</a></li>
+                    <li><a href="index.html#group-story">그룹 스토리</a></li>
+                    <li><a href="index.html#featured">기획</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- ▲▲▲ 여기까지가 공통 헤더입니다 ▲▲▲ -->
 
 
-/* ========== 상세 페이지 스타일 (레퍼런스와 동일하게) ========== */
+    <!-- ▼▼▼ 이 부분에 각 페이지의 고유한 콘텐츠를 넣습니다 (수정 완료된 버전) ▼▼▼ -->
+    <main class="article-main">
+        <div class="article-container">
+            
+            <!-- 제목과 부제를 감싸는 영역 -->
+            <div class="article-title-box">
+                <h1>기획: 우리가 선택해야 하는 ‘소통’</h1>
+                <h2>우리는 ‘어떤 소통’을 선택할 것인가</h2>
+            </div>
 
-/* 상세 페이지의 기본 배경색 설정 */
-.article-page {
-    background-color: #f8f9fa;
-}
+            <!-- 본문 콘텐츠 영역 -->
+            <div class="article-content">
+                <p>변화와 재정립의 시기에 서 있는 신보그룹. 그 과정에서 우리가 갖춰야 할 조직문화의 태도는 무엇일까</p>
+                
+                <img src="hilight_card1.png" alt="소통 기획 이미지" style="width:100%; max-width:800px; margin:20px 0 40px;">
+                
+                <h3>신보그룹의 조직문화, ‘변화’ 앞에 서다</h3>
+                <p><strong>문화</strong>는 집단 고유의 방식이자, 정체성과 방향을 지탱하는 힘입니다. 그러나 문화는 환경에 따라 변합니다. 그래서 기업은 끊임없이 조직문화의 방향을 직원에게 제시해야 합니다.</p>
+                <p>중요한 건, 문화를 추상적인 구호로만 기억해서는 안 된다는 점입니다</p>
+                <p>이번 코너에서는 변화와 재정비 시점에 있는 신보그룹이 선택해야 하는 조직문화의 방향성은 무엇인지, ‘내가 실천할 수 있는 문화는 무엇’이 있을지 함께 살펴보겠습니다.</p>
+                
+                <!-- 더 의미있는 태그로 정리한 부분 -->
+                <div style="background-color: #f8f9fa; padding: 25px; border-left: 4px solid #F47A1F; margin-top: 40px; border-radius: 4px;">
+                    <p style="margin:0 0 15px 0;"><strong>→ 우리에게 조직문화는...</strong></p>
+                    <ul style="padding-left: 20px; margin: 0; line-height: 1.8;">
+                        <li>‘신보인’이라는 <strong>정체성</strong>을 만들어주고</li>
+                        <li>우리가 나아가야 할 ‘미래의 <strong>방향성</strong>’을 제시해주며</li>
+                        <li>임직원에게는 일에 대한 <strong>동기부여</strong>와 <strong>문제해결</strong> 방법을</li>
+                        <li>기업에게는 지속가능한 성장의 원동력이며 <strong>경쟁력</strong>이 되고 있습니다.</li>
+                    </ul>
+                </div>
+            </div>
 
-/* 본문 콘텐츠를 감싸는 흰색 박스 */
-.article-main {
-    padding-top: 100px; /* 고정 헤더보다 여유있게 공간 확보 */
-    padding-bottom: 60px;
-}
+            <!-- 목록으로 돌아가기 버튼 -->
+            <div style="text-align: center; margin-top: 60px;">
+                 <a href="index.html#featured" class="back-to-list-button">목록으로 돌아가기</a>
+            </div>
 
-.article-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 50px 60px;
-    background-color: #fff;
-    border: 1px solid #e9ecef;
-    border-radius: 8px;
-}
+        </div>
+    </main>
+    <!-- ▲▲▲ 여기까지가 고유 콘텐츠입니다 ▲▲▲ -->
 
-/* 제목 영역 (가운데 정렬) */
-.article-title-box {
-    text-align: center;
-    border-bottom: 1px solid #dee2e6;
-    margin-bottom: 50px;
-    padding-bottom: 30px;
-}
 
-/* 메인 제목 (H1) */
-.article-title-box h1 {
-    font-size: 2.5em; /* 40px */
-    font-weight: 700;
-    color: #F47A1F; /* 포인트 컬러 */
-    margin: 0 0 10px 0;
-}
+    <!-- ▼▼▼ index.html에서 그대로 복사해 온 푸터 ▼▼▼ -->
+    <footer>
+        <div class="container">
+            <p>신보그룹의 사람, 현장, 문화 이야기를 전합니다.</p>
+            <p>발행처 : 신보그룹 인사팀 ㅣ 문의 : jhlee@shinbonet.com</p>
+            <p>© 2024 Shinbo Group. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- ▲▲▲ 여기까지가 공통 푸터입니다 ▲▲▲ -->
 
-/* 부제 (H2) */
-.article-title-box h2 {
-    font-size: 1.3em; /* 20.8px */
-    color: #6c757d; /* 연한 회색 */
-    font-weight: 400;
-    margin: 0;
-}
 
-/* 본문 콘텐츠 영역 */
-.article-content {
-    font-size: 16px; /* 기본 폰트 크기 */
-    line-height: 1.9;
-    color: #212529; /* 기본 텍스트 색상 */
-    text-align: left;
-}
-
-/* 본문 소제목 (H3) */
-.article-content h3 {
-    font-size: 1.25em; /* 20px */
-    font-weight: 700;
-    color: #F47A1F; /* 포인트 컬러 */
-    margin: 50px 0 20px 0;
-}
-
-/* 본문 단락 */
-.article-content p {
-    margin: 0 0 25px 0;
-}
-
-/* 본문 강조 텍스트 */
-.article-content strong {
-    color: #000;
-    font-weight: 600;
-}
-
-/* '목록으로 돌아가기' 버튼 */
-.back-to-list-button {
-    display: inline-block;
-    text-align: center;
-    margin-top: 50px;
-    background-color: #F47A1F;
-    color: white;
-    padding: 12px 25px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-.back-to-list-button:hover {
-    background-color: #e06a1a;
-}
-
-/* 반응형 (모바일) */
-@media (max-width: 768px) {
-    .article-main {
-        padding-top: 80px;
-    }
-    .article-container { 
-        padding: 30px 20px; 
-        margin: 30px 10px; 
-    }
-    .article-title-box h1 { 
-        font-size: 2em; 
-    }
-    .article-title-box h2 {
-        font-size: 1.1em;
-    }
-    .article-content h3 {
-        font-size: 1.15em;
-    }
-}
+    <!-- JS 파일도 필요하다면 연결해줍니다 -->
+    <script src="script.js"></script>
+</body>
+</html>
