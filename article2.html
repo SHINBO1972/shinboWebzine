@@ -2,12 +2,15 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
+    <!-- 각 페이지에 맞는 제목으로 수정해주세요 -->
     <title>기획: 우리가 선택해야 하는 ‘소통’ - 신보그룹 웹진</title>
+    
+    <!-- index.html과 동일한 CSS 파일을 연결합니다. (매우 중요!) -->
     <link rel="stylesheet" href="style.css?v=11"> 
 </head>
 <body>
 
-    <!-- ▼▼▼ 공통 헤더 ▼▼▼ -->
+    <!-- ▼▼▼ index.html에서 그대로 복사해 온 헤더 ▼▼▼ -->
     <header>
         <div class="container">
             <div class="logo">
@@ -23,28 +26,53 @@
             </nav>
         </div>
     </header>
-    <!-- ▲▲▲ 공통 헤더 끝 ▲▲▲ -->
+    <!-- ▲▲▲ 여기까지가 공통 헤더입니다 ▲▲▲ -->
 
 
-    <!-- ▼▼▼ 각 페이지의 고유한 콘텐츠 ▼▼▼ -->
-    <main class="article-content">
-        <div class="container">
-            <!-- 1. 여기에 제목만 입력하면... -->
-            <h1>기획: 우리가 선택해야 하는 ‘소통’무엇인가?</h1>
+    <!-- ▼▼▼ 이 부분에 각 페이지의 고유한 콘텐츠를 넣습니다 (수정 완료된 버전) ▼▼▼ -->
+    <main class="article-main">
+        <div class="article-container">
             
-            <!-- 2. 이 줄은 JavaScript가 자동으로 채워줍니다! -->
-            <p class="article-subtitle"></p> 
-            
-            <hr>
-            <img src="hilight_card1.png" alt="소통 기획 이미지" style="width:100%; max-width:800px; margin:20px 0;">
-            <p>여기에 게시물 본문 내용이 들어갑니다. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-            <p>문단은 p 태그로 계속 추가할 수 있습니다.</p>
+            <!-- 제목과 부제를 감싸는 영역 -->
+            <div class="article-title-box">
+                <h1>기획: 우리가 선택해야 하는 ‘소통’</h1>
+                <h2>우리는 ‘어떤 소통’을 선택할 것인가</h2>
+            </div>
+
+            <!-- 본문 콘텐츠 영역 -->
+            <div class="article-content">
+                <p>변화와 재정립의 시기에 서 있는 신보그룹. 그 과정에서 우리가 갖춰야 할 조직문화의 태도는 무엇일까</p>
+                
+                <img src="hilight_card1.png" alt="소통 기획 이미지" style="width:100%; max-width:800px; margin:20px 0 40px;">
+                
+                <h3>신보그룹의 조직문화, ‘변화’ 앞에 서다</h3>
+                <p><strong>문화</strong>는 집단 고유의 방식이자, 정체성과 방향을 지탱하는 힘입니다. 그러나 문화는 환경에 따라 변합니다. 그래서 기업은 끊임없이 조직문화의 방향을 직원에게 제시해야 합니다.</p>
+                <p>중요한 건, 문화를 추상적인 구호로만 기억해서는 안 된다는 점입니다</p>
+                <p>이번 코너에서는 변화와 재정비 시점에 있는 신보그룹이 선택해야 하는 조직문화의 방향성은 무엇인지, ‘내가 실천할 수 있는 문화는 무엇’이 있을지 함께 살펴보겠습니다.</p>
+                
+                <!-- 더 의미있는 태그로 정리한 부분 -->
+                <div style="background-color: #f8f9fa; padding: 25px; border-left: 4px solid #F47A1F; margin-top: 40px; border-radius: 4px;">
+                    <p style="margin:0 0 15px 0;"><strong>→ 우리에게 조직문화는...</strong></p>
+                    <ul style="padding-left: 20px; margin: 0; line-height: 1.8;">
+                        <li>‘신보인’이라는 <strong>정체성</strong>을 만들어주고</li>
+                        <li>우리가 나아가야 할 ‘미래의 <strong>방향성</strong>’을 제시해주며</li>
+                        <li>임직원에게는 일에 대한 <strong>동기부여</strong>와 <strong>문제해결</strong> 방법을</li>
+                        <li>기업에게는 지속가능한 성장의 원동력이며 <strong>경쟁력</strong>이 되고 있습니다.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 목록으로 돌아가기 버튼 -->
+            <div style="text-align: center; margin-top: 60px;">
+                 <a href="index.html#featured" class="back-to-list-button">목록으로 돌아가기</a>
+            </div>
+
         </div>
     </main>
-    <!-- ▲▲▲ 고유 콘텐츠 끝 ▲▲▲ -->
+    <!-- ▲▲▲ 여기까지가 고유 콘텐츠입니다 ▲▲▲ -->
 
 
-    <!-- ▼▼▼ 공통 푸터 ▼▼▼ -->
+    <!-- ▼▼▼ index.html에서 그대로 복사해 온 푸터 ▼▼▼ -->
     <footer>
         <div class="container">
             <p>신보그룹의 사람, 현장, 문화 이야기를 전합니다.</p>
@@ -52,10 +80,10 @@
             <p>© 2024 Shinbo Group. All rights reserved.</p>
         </div>
     </footer>
-    <!-- ▲▲▲ 공통 푸터 끝 ▲▲▲ -->
+    <!-- ▲▲▲ 여기까지가 공통 푸터입니다 ▲▲▲ -->
 
 
-    <!-- 자바스크립트 파일 연결 -->
+    <!-- JS 파일도 필요하다면 연결해줍니다 -->
     <script src="script.js"></script>
 </body>
 </html>
