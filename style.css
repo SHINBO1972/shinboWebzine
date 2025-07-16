@@ -44,7 +44,7 @@ footer p { margin: 5px 0; font-size: 0.9em; }
 
 /* --- 메인 페이지 스타일 (index.html) --- */
 #main-visual {
-    padding-top: 80px; /* 헤더 높이만큼 여백 */
+    padding-top: 20px; /* 헤더 높이만큼 여백 */
     height: 60vh;
     background: url('images/main-visual.jpg') no-repeat center center/cover; /* 실제 이미지 경로로 수정 필요 */
     display: flex;
